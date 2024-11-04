@@ -12,6 +12,7 @@ body {
 }
 #navbar-div {
   display: grid;
+  width: 22vw;
   height: 100vh;
   background-color: #0ea5e9;
   overflow: auto;
@@ -28,7 +29,6 @@ body {
 .nav-item {
   display: flex;
   align-items: flex-start;
-  padding: 0rem 7rem;
   padding-left: 1.8rem;
   font-size: 1.8rem;
   font-weight: 550;
@@ -46,4 +46,81 @@ body {
 }
 #navbar-div #privacy {
   grid-row: 12/14;
+}
+
+/* Content Container css */
+#content-container header .header-row-1 {
+  display: grid;
+  align-items: center;
+  width: 78vw;
+  background-color: #f6fdfc;
+  overflow: auto;
+  grid-template-columns: 2fr 16fr 2fr 2fr 5fr;
+}
+#content-container header .header-row-1 #search-icon {
+  padding-left: 4rem;
+  margin: 2rem;
+  color: black;
+}
+#content-container header .header-row-1 #search-input {
+  height: 4.5vh;
+  margin: 2rem;
+  margin-left: 0;
+  padding: 0rem 1rem;
+  border-radius: 22px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #e2e8f0;
+}
+#content-container header .header-row-1 #noti-icon {
+  margin: 2rem;
+  padding-left: 13rem;
+  color: black;
+}
+#content-container header .header-row-1 #logo-image-small {
+  border-radius: 100%;
+}
+#content-container header .header-row-1 #user-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+}
+#content-container header .header-row-2 {
+  display: grid;
+  align-items: center;
+  width: 78vw;
+  background-color: #f6fdfc;
+  overflow: auto;
+  grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
+}
+
+#content-container header .header-row-2 #logo-image-big {
+  margin: 1.5rem;
+  margin-left: 5rem;
+  border-radius: 100%;
+}
+#content-container header .header-row-2 #welcome-user-text {
+  margin: 1.5rem;
+  color: black;
+}
+#content-container header .header-row-2 #welcome-user-text #greeting {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#content-container header .header-row-2 #welcome-user-text #username {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#content-container header .header-row-2 #new-btn,
+#upload-btn,
+#share-btn {
+  width: 7vw;
+  height: 6vh;
+  border-radius: 30px;
+  border: none;
+  background-color: #60a5fa;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
 }
