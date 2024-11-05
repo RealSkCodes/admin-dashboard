@@ -8,7 +8,8 @@
   </head>
   <body>
     <div id="main-container">
-      <div id="navbar-div">
+      <!-- Navbar Section -->
+      <nav id="navbar-div">
         <span class="nav-item" id="dashboard">
           <span class="iconify" data-icon="material-symbols:dashboard" data-inline="false"></span>
           Dashboard
@@ -53,9 +54,12 @@
           <span class="iconify" data-icon="mdi:shield-check" data-inline="false"></span>
           Privacy
         </span>
-      </div>
+      </nav>
+
+      <!-- Content Container -->
       <div id="content-container">
         <header>
+          <!-- Header Row 1 -->
           <div class="header-row-1">
             <span class="iconify" data-icon="material-symbols:search" id="search-icon"></span>
             <input type="text" name="search-input" id="search-input" />
@@ -69,6 +73,8 @@
             />
             <span id="user-name">Real SK</span>
           </div>
+
+          <!-- Header Row 2 -->
           <div class="header-row-2">
             <img
               id="logo-image-big"
@@ -79,13 +85,139 @@
             />
             <span id="welcome-user-text">
               <span id="greeting">Hi there,</span><br />
-              <span id="username"> Real SK (@realsk)</span>
+              <span id="username">Real SK (@realsk)</span>
             </span>
             <button type="button" id="new-btn">New</button>
             <button type="button" id="upload-btn">Upload</button>
             <button type="button" id="share-btn">Share</button>
           </div>
         </header>
+
+        <!-- Main Content -->
+        <div id="main-content">
+          <!-- Projects Section -->
+          <section class="projects-section">
+            <div class="section-heading">
+              <span>Your Projects</span>
+            </div>
+            <div id="projects-container">
+              <div class="card">
+                <span class="title">Super Cool Project</span>
+                <span class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam!
+                  Voluptas facilis nulla hic asperiores!
+                </span>
+                <div class="icon-container">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:star-plus-outline"
+                    data-inline="false"
+                  ></span>
+                  <span class="iconify" data-icon="mdi:eye-plus-outline" data-inline="false"></span>
+                  <span class="iconify" data-icon="mdi:source-branch" data-inline="false"></span>
+                </div>
+              </div>
+              <div class="card">
+                <span class="title">Super Cool Project</span>
+                <span class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam!
+                  Voluptas facilis nulla hic asperiores!
+                </span>
+                <div class="icon-container">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:star-plus-outline"
+                    data-inline="false"
+                  ></span>
+                  <span class="iconify" data-icon="mdi:eye-plus-outline" data-inline="false"></span>
+                  <span class="iconify" data-icon="mdi:source-branch" data-inline="false"></span>
+                </div>
+              </div>
+              <div class="card">
+                <span class="title">Super Cool Project</span>
+                <span class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam!
+                  Voluptas facilis nulla hic asperiores!
+                </span>
+                <div class="icon-container">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:star-plus-outline"
+                    data-inline="false"
+                  ></span>
+                  <span class="iconify" data-icon="mdi:eye-plus-outline" data-inline="false"></span>
+                  <span class="iconify" data-icon="mdi:source-branch" data-inline="false"></span>
+                </div>
+              </div>
+              <div class="card">
+                <span class="title">Super Cool Project</span>
+                <span class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam!
+                  Voluptas facilis nulla hic asperiores!
+                </span>
+                <div class="icon-container">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:star-plus-outline"
+                    data-inline="false"
+                  ></span>
+                  <span class="iconify" data-icon="mdi:eye-plus-outline" data-inline="false"></span>
+                  <span class="iconify" data-icon="mdi:source-branch" data-inline="false"></span>
+                </div>
+              </div>
+              <!-- Repeat card structure as needed -->
+            </div>
+          </section>
+
+          <!-- Announcements and Trending Section -->
+          <!-- Announcements and Trending Section -->
+          <section id="announcement-and-trending-container">
+            <!-- Announcements Section -->
+            <div class="section-heading">
+              <span>Announcements</span>
+            </div>
+            <div class="announcement-card">
+              <div class="ann-item">
+                <span class="title">Site Maintenance</span><br />
+                <span class="description">
+                  Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit
+                  sodales congue...
+                </span>
+              </div>
+              <hr />
+              <div class="ann-item">
+                <span class="title">Community Share Day</span><br />
+                <span class="description">
+                  Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan
+                  porttitor...
+                </span>
+              </div>
+              <hr />
+              <div class="ann-item">
+                <span class="title">Updated Privacy Policy</span><br />
+                <span class="description">
+                  Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras
+                  fringilla sagittis sem in mattis...
+                </span>
+              </div>
+            </div>
+
+            <!-- Trending Section -->
+            <div class="section-heading">
+              <span>Trending</span>
+            </div>
+            <div class="trending-card">
+              <div class="trending-item">
+                <span class="title">@tegan</span><br />
+                <span class="description">World Peace Builder</span>
+              </div>
+              <div class="trending-item">
+                <span class="title">@morgan</span><br />
+                <span class="description">Super Cool Project</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>

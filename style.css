@@ -1,120 +1,146 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Roboto, "Open Sans", sans-serif;
 }
+
+/* Body Styling */
 body {
   background-color: black;
   color: white;
 }
+.iconify {
+  font-size: 2rem;
+}
+/* Main Container */
 #main-container {
   display: flex;
+  min-height: 100vh; /* Ensure the main container covers at least the full viewport height */
 }
+
+/* Navbar Styling */
 #navbar-div {
   display: grid;
   width: 22vw;
-  height: 100vh;
   background-color: #0ea5e9;
-  overflow: auto;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 14vh 8vh 8vh 8vh 8vh 8vh 13vh 8vh 8vh 8vh;
+  overflow-y: auto;
 }
-.iconify {
-  font-size: 2rem;
-  margin-right: 1.7rem;
-}
-#dashboard .iconify {
-  font-size: 4rem;
-  margin-top: -10px;
-}
+
 .nav-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 1.8rem;
   font-size: 1.8rem;
   font-weight: 550;
   color: white;
-  text-decoration: none;
-}
-#navbar-div #dashboard {
-  font-size: 2.2rem;
-  grid-row: 1/3;
-  margin-top: 2rem;
-  margin-left: -0.5rem;
-}
-#navbar-div #communities {
-  grid-row: 8/10;
-}
-#navbar-div #privacy {
-  grid-row: 12/14;
+  cursor: pointer;
 }
 
-/* Content Container css */
-#content-container header .header-row-1 {
+.nav-item .iconify {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+#dashboard .iconify {
+  font-size: 4rem;
+  margin-top: -10px;
+}
+
+#navbar-div #communities {
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+
+#navbar-div #dashboard {
+  font-size: 2.4rem;
+  margin-left: -0.5rem;
+}
+
+/* Content Container Styling */
+#content-container {
+  width: 78vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6fdfc;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header Styling */
+#content-container header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-row-1,
+.header-row-2 {
   display: grid;
   align-items: center;
-  width: 78vw;
   background-color: #f6fdfc;
-  overflow: auto;
+  padding: 1rem;
+}
+
+.header-row-1 {
   grid-template-columns: 2fr 16fr 2fr 2fr 5fr;
 }
-#content-container header .header-row-1 #search-icon {
-  padding-left: 4rem;
-  margin: 2rem;
+
+.header-row-2 {
+  grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
+}
+
+.header-row-1 .iconify {
+  margin-left: 3rem;
+}
+
+#search-icon,
+#noti-icon {
   color: black;
 }
-#content-container header .header-row-1 #search-input {
+
+#search-input {
   height: 4.5vh;
-  margin: 2rem;
-  margin-left: 0;
-  padding: 0rem 1rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
   border-radius: 22px;
   border: none;
   font-size: 1.1rem;
   font-weight: 600;
   background-color: #e2e8f0;
 }
-#content-container header .header-row-1 #noti-icon {
-  margin: 2rem;
-  padding-left: 13rem;
-  color: black;
+
+#logo-image-small,
+#logo-image-big {
+  border-radius: 50%;
 }
-#content-container header .header-row-1 #logo-image-small {
-  border-radius: 100%;
-}
-#content-container header .header-row-1 #user-name {
+
+#user-name {
   font-size: 1.8rem;
   font-weight: bold;
   color: black;
 }
-#content-container header .header-row-2 {
-  display: grid;
-  align-items: center;
-  width: 78vw;
-  background-color: #f6fdfc;
-  overflow: auto;
-  grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
-}
 
-#content-container header .header-row-2 #logo-image-big {
-  margin: 1.5rem;
-  margin-left: 5rem;
-  border-radius: 100%;
-}
-#content-container header .header-row-2 #welcome-user-text {
+#welcome-user-text {
   margin: 1.5rem;
   color: black;
 }
-#content-container header .header-row-2 #welcome-user-text #greeting {
+
+#greeting {
   font-size: 1.2rem;
   font-weight: bold;
 }
-#content-container header .header-row-2 #welcome-user-text #username {
+
+#username {
   font-size: 2rem;
   font-weight: bold;
 }
-#content-container header .header-row-2 #new-btn,
-#upload-btn,
-#share-btn {
+
+button {
   width: 7vw;
   height: 6vh;
   border-radius: 30px;
@@ -123,4 +149,148 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   color: white;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* Main Content Styling */
+.projects-section {
+  background-color: #e2e8f0;
+}
+
+#projects-container {
+  display: grid;
+  width: 58vw;
+  gap: 1vw;
+  background-color: #e2e8f0;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#ann-container {
+  display: grid;
+  gap: 1vw;
+  background-color: #e2e8f0;
+  padding: 1rem;
+}
+
+/* Section Heading */
+.section-heading {
+  background-color: #e2e8f0;
+  padding: 2rem 1rem 0rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-heading span {
+  font-size: 1.6rem;
+  font-weight: 560;
+  color: black;
+}
+
+/* Card Styling */
+.card,
+.ann-card {
+  background-color: #ffffff;
+  color: black;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  border-radius: 10px;
+}
+
+.card {
+  border-left: 10px solid #f0b429;
+}
+
+.ann-card {
+  border-left: 6px solid #60a5fa;
+}
+
+.title {
+  margin: 1rem 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #404242;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+.icon-container {
+  text-align: end;
+}
+.icon-container .iconify {
+  margin: 0rem 0.7rem;
+}
+
+/* Trending Container Styling */
+#trending-container {
+  display: grid;
+  gap: 1vw;
+  background-color: #e2e8f0;
+  padding: 1rem;
+}
+
+.trending-card {
+  background-color: #ffffff;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.trending-card .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trending-card .description {
+  font-size: 1.4rem;
+  color: #404242;
+}
+
+/* Container Styling */
+#announcement-and-trending-container {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0rem 1rem;
+}
+
+/* Announcement and Trending Cards */
+.announcement-card,
+.trending-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Styling */
+.ann-item,
+.trending-item {
+  padding: 1rem 0;
+}
+
+.ann-item .title,
+.trending-item .title {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.ann-item .description,
+.trending-item .description {
+  font-size: 1.2rem;
+  color: #404242;
+}
+
+/* Separator Styling */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0.5rem 0;
 }
