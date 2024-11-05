@@ -88,10 +88,13 @@ body {
 
 .header-row-1 {
   grid-template-columns: 2fr 16fr 2fr 2fr 5fr;
+  z-index: 1000;
 }
-
 .header-row-2 {
+  display: grid;
   grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
+  box-shadow: 0px 5px 10px -2px #00000080;
+  z-index: 999;
 }
 
 .header-row-1 .iconify {
